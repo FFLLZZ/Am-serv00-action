@@ -147,33 +147,44 @@ Telegrame客户端中的acmlubs_bot收到”Hello World”，就成功了！
 
 
 
+
+
+#💖安装部署
+
 1、用我们前面下载的工具登入SSH(有些工具 第一次连接还是会弹出输出密码记得点X 然后再添加密码 ) 使用 serv00 通过电子邮件发送给您的信息（下面username、panel要修改成你邮箱收到对应的信息）。
 ssh <username>@<panel>.serv00.com
+
 2、vmess、Cloudflare隧道Argo+CDN回源节点 一键安装 (1个TCP端口)
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/amclubs/am-serv00-vmess/main/install_serv00_vmess.sh)
 ```
+
 指定UUID安装( 要换成你要生成的UUID) 在线获取UUID
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/amclubs/am-serv00-vmess/main/install_serv00_vmess.sh <UUID>)
 ```
+
 例如:
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/amclubs/am-serv00-vmess/main/install_serv00_vmess.sh df4abc6a-5a79-4104-93c9-250756008e9b)
 ```
+
 3、vless(reality)、vmess、hysteria2三协议节点 、Cloudflare隧道Argo+CDN回源节点 一键安装 (2个TCP端口 1个UDP端口)
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/amclubs/am-serv00-vmess/main/install_serv00_vless_vmess_hysteria2.sh)
 ```
+
 4、保活教程
-青龙保活教程
-GitHub Actions保活教程
+青龙保活教程 https://youtu.be/J4lcIwBowmM
+GitHub Actions保活教程 https://youtu.be/zkGGklEaO2I
+
 四、测试节点
 1、把安装成功返回的节点信息复制到订阅工具里就可以使用
 
 2、如果不记得节点配置，可以通过下面信息查看
 
 cat /home/${USER}/.vmess/list.txt
+
 3、节点通过Cloudflare的CDN设置域名回源进行加速
 CF端口类型
 HTTP：80，8080，8880，2052，2082，2086，2095
@@ -181,8 +192,12 @@ HTTP：80，8080，8880，2052，2082，2086，2095
 HTTPS：443，2053，2083，2087，2096，8443
 
 4、请查看视频教程（Cloudflare的CDN设置域名回源进行加速） 视频教程
+https://youtu.be/6UZXHfc3zEU
+
 5、免费域名注册教程
+
 五、卸载VMess
+
 一键卸载命令，根据提示，选择2（2. 卸载sing-box） 直接卸载完成
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/amclubs/am-serv00-vmess/main/install_serv00_vmess.sh)
