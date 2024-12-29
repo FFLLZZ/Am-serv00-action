@@ -145,13 +145,7 @@ curl -s -X POST https://api.telegram.org/bot{token}/sendMessage -d chat_id={chat
 - 3.4 成功与否
 Telegrame客户端中的acmlubs_bot收到”Hello World”，就成功了！
 
-  # 
- <center><details><summary><strong> [点击展开] 赞赏支持 ~🧧</strong></summary>
- *我非常感谢您的赞赏和支持，它们将极大地激励我继续创新，持续产生有价值的工作。*
-  
- - **USDT-TRC20:** `TWTxUyay6QJN3K4fs4kvJTT8Zfa2mWTwDD`
-  
- </details></center>
+
 
  #
  免责声明:
